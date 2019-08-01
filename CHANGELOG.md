@@ -93,3 +93,11 @@
         </application>
     </manifest>
     ```  
+
+# 0.0.7
+
+* This version is the first version to support iOS with the help of the Background Fetch API.  
+  * Only recurring tasks can be scheduled by iOS.
+  * If you want to respond to iOS background triggers you should add the extra case `Workmanager.iOSBackgroundTask` to your switch case.
+* [BREAKING change]
+  * `Workmanager.defaultCallbackDispatcher` becomes `Workmanager.executeTask` 
